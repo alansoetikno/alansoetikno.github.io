@@ -1,9 +1,22 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI API Text Submission</title>
+</head>
 <body>
-  <h1>Alan Soetikno</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <h1>Submit Text to OpenAI API</h1>
+    <form action="/submit" method="post">
+        <textarea name="apiKey" rows="1" cols="50" placeholder="API KEY"></textarea>
+        <br>
 
+        <textarea name="orgID" rows="1" cols="50" placeholder="ORG ID"></textarea>
+        <br>
+
+        <textarea name="userInput" rows="4" cols="50" placeholder="Enter text here..."></textarea>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
